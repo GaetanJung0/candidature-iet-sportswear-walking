@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Candidature de Gaétan Jung - Ingénieur Essai Terrain Footwear, Sportswear / Walking, cellule test Domyos.">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="theme-color" content="#020617">
+  <meta name="theme-color" content="#3643BA">
   <meta property="og:title" content="Gaétan Jung | Candidature IET Footwear Sportswear / Walking">
   <meta property="og:description" content="Présentation pour le poste d'Ingénieur Essai Terrain Footwear, Sportswear / Walking (Decathlon Fitness Lab, Marcq-en-Barœul).">
   <meta property="og:type" content="website">
@@ -13,35 +13,39 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,800;1,900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            night: '#020617',
-            slateGlow: '#0f172a',
-            mist: '#cbd5e1',
-            ridge: '#0f766e',
-            alpine: '#059669',
-            snow: '#f8fafc'
+            deca: '#3643BA',
+            decaDark: '#101F6B',
+            decaLight: '#E8EAF8',
+            cloud: '#F5F4F5',
+            ink: '#101010'
           },
           fontFamily: {
-            display: ['Space Grotesk', 'sans-serif'],
-            body: ['Outfit', 'sans-serif']
-          },
-          boxShadow: {
-            panel: '0 24px 80px rgba(2, 6, 23, 0.45)'
-          },
-          backgroundImage: {
-            grain: 'radial-gradient(circle at top left, rgba(5, 150, 105, 0.15), transparent 28%), radial-gradient(circle at 85% 20%, rgba(15, 118, 110, 0.18), transparent 30%), linear-gradient(180deg, rgba(15, 23, 42, 0.98), rgba(2, 6, 23, 1))'
+            cond: ['Roboto Condensed', 'sans-serif'],
+            body: ['Roboto', 'sans-serif']
           }
         }
       }
     };
   </script>
   <style>
+    .h-sport {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-style: italic;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: -0.01em;
+      line-height: 0.95;
+    }
+
+    .slant { clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%); }
+
     .reveal {
       opacity: 0;
       transform: translateY(24px);
@@ -53,409 +57,300 @@
       transform: translateY(0);
     }
 
-    .nav-link.is-active {
-      color: #ffffff;
-    }
+    .nav-link.is-active { color: #3643BA; }
+    .nav-link.is-active::after { width: 100%; }
 
-    .nav-link.is-active::after {
-      width: 100%;
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity: 1; transform: none; transition: none; }
     }
   </style>
 </head>
-<body class="bg-night bg-grain font-body text-snow antialiased selection:bg-alpine/30 selection:text-white">
-  <div class="fixed inset-x-0 top-0 -z-10 h-[34rem] bg-[radial-gradient(circle_at_top,rgba(16,185,129,0.22),transparent_42%),radial-gradient(circle_at_20%_20%,rgba(14,165,233,0.08),transparent_22%)]"></div>
+<body class="bg-white font-body text-ink antialiased selection:bg-decaLight selection:text-ink">
 
-  <header class="sticky top-0 z-50 border-b border-white/10 bg-night/80 backdrop-blur-xl">
-    <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8" aria-label="Navigation principale">
-      <a href="#top" class="font-display text-sm font-bold uppercase tracking-[0.3em] text-mist transition hover:text-white">Gaétan Jung / IET Footwear</a>
+  <header class="sticky top-0 z-50 border-b border-black/10 bg-white/95 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8" aria-label="Navigation principale">
+      <a href="#top" class="h-sport text-2xl text-deca">Gaétan Jung</a>
 
-      <button id="menu-toggle" type="button" class="inline-flex items-center justify-center rounded-full border border-white/15 px-4 py-2 text-sm font-medium text-white transition hover:border-alpine hover:bg-white/5 lg:hidden" aria-expanded="false" aria-controls="mobile-menu">
+      <button id="menu-toggle" type="button" class="inline-flex items-center justify-center rounded-full border border-black/20 px-4 py-2 text-sm font-medium transition hover:border-deca hover:text-deca lg:hidden" aria-expanded="false" aria-controls="mobile-menu">
         Menu
       </button>
 
-      <div class="hidden items-center gap-8 lg:flex">
-        <a class="nav-link relative text-sm text-mist transition hover:text-white after:absolute after:-bottom-2 after:left-0 after:h-px after:w-0 after:bg-alpine after:transition-all" href="#pivot">Mon Projet</a>
-        <a class="nav-link relative text-sm text-mist transition hover:text-white after:absolute after:-bottom-2 after:left-0 after:h-px after:w-0 after:bg-alpine after:transition-all" href="#apport">Mon Apport</a>
-        <a class="nav-link relative text-sm text-mist transition hover:text-white after:absolute after:-bottom-2 after:left-0 after:h-px after:w-0 after:bg-alpine after:transition-all" href="#pistes">Mes Pistes</a>
-        <a class="nav-link relative text-sm text-mist transition hover:text-white after:absolute after:-bottom-2 after:left-0 after:h-px after:w-0 after:bg-alpine after:transition-all" href="#parcours">Parcours</a>
-        <a class="nav-link relative text-sm text-mist transition hover:text-white after:absolute after:-bottom-2 after:left-0 after:h-px after:w-0 after:bg-alpine after:transition-all" href="#terrain">Terrain & Veille</a>
-        <a class="rounded-full bg-alpine px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-emerald-500" href="mailto:gaetan.jung@decathlon.com">Contact</a>
+      <div class="hidden items-center gap-7 text-sm font-medium lg:flex">
+        <a class="nav-link relative transition hover:text-deca after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:bg-deca after:transition-all" href="#pivot">Mon projet</a>
+        <a class="nav-link relative transition hover:text-deca after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:bg-deca after:transition-all" href="#apport">Mon apport</a>
+        <a class="nav-link relative transition hover:text-deca after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:bg-deca after:transition-all" href="#parcours">Parcours</a>
+        <a class="nav-link relative transition hover:text-deca after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-0 after:bg-deca after:transition-all" href="#terrain">Terrain</a>
+        <a class="rounded-full bg-deca px-5 py-2.5 font-bold text-white transition hover:bg-decaDark" href="https://chat.google.com/" target="_blank" rel="noreferrer" title="Me trouver sur Google Chat : gaetan.jung@decathlon.com">Me chatter</a>
       </div>
     </nav>
 
-    <div id="mobile-menu" class="hidden border-t border-white/10 px-4 py-4 lg:hidden">
-      <div class="flex flex-col gap-3">
-        <a class="rounded-2xl px-3 py-2 text-sm text-mist transition hover:bg-white/5 hover:text-white" href="#pivot">Mon Projet</a>
-        <a class="rounded-2xl px-3 py-2 text-sm text-mist transition hover:bg-white/5 hover:text-white" href="#apport">Mon Apport</a>
-        <a class="rounded-2xl px-3 py-2 text-sm text-mist transition hover:bg-white/5 hover:text-white" href="#pistes">Mes Pistes</a>
-        <a class="rounded-2xl px-3 py-2 text-sm text-mist transition hover:bg-white/5 hover:text-white" href="#parcours">Parcours</a>
-        <a class="rounded-2xl px-3 py-2 text-sm text-mist transition hover:bg-white/5 hover:text-white" href="#terrain">Terrain & Veille</a>
-        <a class="rounded-2xl bg-alpine px-3 py-2 text-sm font-semibold text-white transition hover:bg-emerald-500" href="mailto:gaetan.jung@decathlon.com">Me contacter</a>
+    <div id="mobile-menu" class="hidden border-t border-black/10 px-4 py-4 lg:hidden">
+      <div class="flex flex-col gap-1 text-sm font-medium">
+        <a class="rounded-lg px-3 py-2 hover:bg-cloud" href="#pivot">Mon projet</a>
+        <a class="rounded-lg px-3 py-2 hover:bg-cloud" href="#apport">Mon apport</a>
+        <a class="rounded-lg px-3 py-2 hover:bg-cloud" href="#parcours">Parcours</a>
+        <a class="rounded-lg px-3 py-2 hover:bg-cloud" href="#terrain">Terrain</a>
+        <a class="mt-2 rounded-full bg-deca px-3 py-2.5 text-center font-bold text-white" href="https://chat.google.com/" target="_blank" rel="noreferrer">Me chatter sur Google Chat</a>
       </div>
     </div>
   </header>
 
   <main id="top">
     <!-- HERO -->
-    <section class="mx-auto grid min-h-[calc(100vh-5rem)] max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-[1.15fr_0.85fr] lg:px-8 lg:py-24">
-      <div class="reveal space-y-8">
-        <div class="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-medium uppercase tracking-[0.22em] text-mist">
-          <span class="h-2 w-2 rounded-full bg-alpine"></span>
-          Sportswear / Walking · Footwear
-        </div>
-
-        <div class="space-y-5">
-          <p class="text-sm font-medium uppercase tracking-[0.28em] text-alpine">Candidature Ingénieur Essai Terrain</p>
-          <h1 class="max-w-4xl font-display text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-7xl">
-            Du test logiciel à la validation terrain de nos chaussures.
-          </h1>
-          <p class="max-w-2xl text-lg leading-8 text-mist sm:text-xl">
-            Aujourd'hui Ingénieur QA Connected Products chez Decathlon, je souhaite mettre ma culture du test, de l'automatisation et de la donnée au service de la validation footwear Sportswear et Walking.
-          </p>
-          <p class="max-w-3xl text-base leading-8 text-slate-300 sm:text-lg">
-            Construire des protocoles rigoureux, écouter les utilisateurs sur le terrain et transformer leurs retours en décisions produit&nbsp;: c'est le métier que je veux apprendre et faire grandir au sein de la cellule test Domyos.
-          </p>
-        </div>
-
-        <div class="flex flex-col gap-4 sm:flex-row">
-          <a href="#pivot" class="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-slate-100">Découvrir ma démarche</a>
-          <a href="#contact" class="inline-flex items-center justify-center rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white transition hover:border-alpine hover:bg-white/5">Me contacter</a>
-        </div>
-
-        <ul class="grid gap-4 text-sm font-semibold text-white sm:grid-cols-2 lg:grid-cols-4">
-          <li class="rounded-3xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm">Méthodologie de test</li>
-          <li class="rounded-3xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm">Data, IA & automatisation</li>
-          <li class="rounded-3xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm">Transmission & animation</li>
-          <li class="rounded-3xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm">Marcheur & randonneur</li>
-        </ul>
+    <section class="relative overflow-hidden bg-white">
+      <div class="absolute inset-y-0 right-0 hidden w-[44%] lg:block" aria-hidden="true">
+        <div class="slant absolute inset-0 -translate-x-5 bg-deca"></div>
+        <img class="slant absolute inset-0 h-full w-full object-cover object-[50%_15%]" src="images/portrait.jpg" alt="">
       </div>
 
-      <div class="reveal lg:justify-self-end">
-        <div class="overflow-hidden rounded-[2rem] border border-white/10 bg-slateGlow/80 shadow-panel">
-          <div class="relative h-full min-h-[28rem] p-6 sm:p-8">
-            <div class="relative flex min-h-[24rem] flex-col justify-between">
-              <div>
-                <p class="text-xs uppercase tracking-[0.28em] text-emerald-300">Projet</p>
-                <p class="mt-3 max-w-xs text-xl font-semibold leading-relaxed text-white">Apporter rigueur et outillage data à la validation footwear, et apprendre l'ingénierie de la chaussure sur le terrain.</p>
-              </div>
-
-              <dl class="mt-8 grid gap-5 rounded-[1.75rem] border border-white/10 bg-slate-950/65 p-6 backdrop-blur-md">
-                <div class="flex items-baseline gap-4">
-                  <dt class="shrink-0 text-sm text-mist">Mon métier actuel</dt>
-                  <span class="h-px min-w-4 flex-1 border-b border-dashed border-white/20"></span>
-                  <dd class="text-right text-sm font-semibold text-white">QA, Automatisation & Data</dd>
-                </div>
-
-                <div class="flex items-baseline gap-4">
-                  <dt class="shrink-0 text-sm text-mist">Ce que j'apporte</dt>
-                  <span class="h-px min-w-4 flex-1 border-b border-dashed border-white/20"></span>
-                  <dd class="text-right text-sm font-semibold text-white">Méthode & outils data</dd>
-                </div>
-
-                <div class="flex items-baseline gap-4">
-                  <dt class="shrink-0 text-sm text-mist">Ce que je viens apprendre</dt>
-                  <span class="h-px min-w-4 flex-1 border-b border-dashed border-white/20"></span>
-                  <dd class="text-right text-sm font-semibold text-white">Ingénierie footwear & tests utilisateurs</dd>
-                </div>
-              </dl>
-            </div>
+      <div class="relative mx-auto max-w-7xl">
+        <div class="reveal px-4 py-14 sm:px-6 lg:w-[58%] lg:px-8 lg:py-24">
+          <p class="inline-block border-l-4 border-deca bg-decaLight px-3 py-1 font-cond text-sm font-bold uppercase tracking-wider text-deca">Candidature IET · Footwear Sportswear / Walking</p>
+          <h1 class="h-sport mt-6 text-5xl sm:text-6xl lg:text-7xl">
+            Du test logiciel<br>à la validation terrain<br><span class="text-deca">de nos chaussures</span>
+          </h1>
+          <p class="mt-6 max-w-xl text-lg leading-8 text-black/75">
+            Ingénieur QA Connected Products chez Decathlon, je veux mettre ma culture du test, de la data et de l'IA au service de la validation footwear Sportswear et Walking, au sein de la cellule test Domyos.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a class="rounded-full bg-deca px-6 py-3 text-sm font-bold text-white transition hover:bg-decaDark" href="#pivot">Découvrir ma démarche</a>
+            <a class="rounded-full border-2 border-ink px-6 py-3 text-sm font-bold transition hover:border-deca hover:text-deca" href="#contact">Me contacter</a>
           </div>
         </div>
       </div>
+
+      <div class="relative lg:hidden">
+        <img class="h-96 w-full object-cover object-[50%_15%]" src="images/portrait.jpg" alt="Portrait de Gaétan Jung">
+        <div class="absolute inset-x-0 bottom-0 h-1.5 bg-deca"></div>
+      </div>
     </section>
 
-    <!-- SECTION 1&nbsp;: PROJET -->
+    <!-- CHIFFRES CLÉS -->
+    <div class="border-y border-black/10 bg-cloud">
+      <ul class="mx-auto grid max-w-7xl grid-cols-2 lg:grid-cols-4">
+        <li class="px-4 py-5 sm:px-6 lg:px-8"><span class="h-sport text-3xl text-deca">QA</span><p class="mt-1 text-sm text-black/70">Méthodologie de test</p></li>
+        <li class="border-l border-black/10 px-4 py-5 sm:px-6 lg:px-8"><span class="h-sport text-3xl text-deca">Data & IA</span><p class="mt-1 text-sm text-black/70">Automatisation sur mesure</p></li>
+        <li class="border-t border-black/10 px-4 py-5 sm:px-6 lg:border-l lg:border-t-0 lg:px-8"><span class="h-sport text-3xl text-deca">EN</span><p class="mt-1 text-sm text-black/70">Très bon anglais</p></li>
+        <li class="border-l border-t border-black/10 px-4 py-5 sm:px-6 lg:border-t-0 lg:px-8"><span class="h-sport text-3xl text-deca">GR20</span><p class="mt-1 text-sm text-black/70">Marcheur & randonneur</p></li>
+      </ul>
+    </div>
+
+    <!-- PROJET -->
     <section id="pivot" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-      <div class="reveal mb-10 max-w-3xl">
-        <p class="text-sm font-medium uppercase tracking-[0.28em] text-alpine">Projet Professionnel</p>
-        <h2 class="mt-4 font-display text-3xl font-bold text-white sm:text-4xl">Pourquoi l'essai terrain Footwear Sportswear / Walking.</h2>
-        <p class="mt-5 text-lg leading-8 text-slate-300">
+      <div class="reveal max-w-3xl">
+        <p class="font-cond text-sm font-bold uppercase tracking-widest text-deca">Projet professionnel</p>
+        <h2 class="h-sport mt-2 text-4xl sm:text-5xl">Pourquoi l'essai terrain footwear</h2>
+        <p class="mt-5 text-lg leading-8 text-black/70">
           En accord et en transparence avec mon leader actuel, je souhaite passer du produit digital au produit physique, sur un métier qui allie rigueur scientifique et contact direct avec les pratiquants.
         </p>
       </div>
 
-      <div class="grid gap-6 lg:grid-cols-3">
-        <article class="reveal rounded-[2rem] border border-white/10 bg-white/5 p-8">
-          <div class="flex items-center justify-between gap-4">
-            <h3 class="font-display text-2xl font-bold text-white">1. Mon profil</h3>
-            <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs uppercase tracking-[0.22em] text-mist">Test & Validation</span>
-          </div>
-          <p class="mt-6 text-sm leading-7 text-slate-300">
+      <div class="mt-10 grid gap-5 lg:grid-cols-3">
+        <article class="reveal border-l-4 border-deca bg-cloud p-7">
+          <p class="font-cond text-xs font-bold uppercase tracking-widest text-black/50">Test & validation</p>
+          <h3 class="mt-2 text-xl font-bold">Mon profil</h3>
+          <p class="mt-3 text-sm leading-7 text-black/70">
             Mon quotidien consiste à valider des produits avant leur mise entre les mains des clients&nbsp;: définir les plans de test, piloter les campagnes, analyser les résultats et outiller l'équipe pour aller plus vite. Je connais déjà l'univers fitness à travers les produits connectés Domyos que je valide (tapis de course, rameurs, elliptiques, vélos d'intérieur).
           </p>
         </article>
 
-        <article class="reveal rounded-[2rem] border border-white/10 bg-white/5 p-8">
-          <div class="flex items-center justify-between gap-4">
-            <h3 class="font-display text-2xl font-bold text-white">2. Mon constat</h3>
-            <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs uppercase tracking-[0.22em] text-mist">Usage réel</span>
-          </div>
-          <p class="mt-6 text-sm leading-7 text-slate-300">
-            Depuis mon arrivée chez Decathlon, ce qui me motive le plus est la compréhension des usages et des besoins des pratiquants, davantage que la technique digitale pure. Je veux que mon travail se mesure directement au confort et à la satisfaction de celui qui porte le produit.
+        <article class="reveal border-l-4 border-deca bg-cloud p-7">
+          <p class="font-cond text-xs font-bold uppercase tracking-widest text-black/50">Usage réel</p>
+          <h3 class="mt-2 text-xl font-bold">Mon constat</h3>
+          <p class="mt-3 text-sm leading-7 text-black/70">
+            Depuis mon arrivée chez Decathlon, ce qui me motive le plus est la compréhension des usages et des besoins des pratiquants, davantage que la technique digitale pure. Je veux que mon travail se mesure directement au confort et à la satisfaction de celui qui utilise le produit.
           </p>
         </article>
 
-        <article class="reveal rounded-[2rem] border border-white/10 bg-white/5 p-8">
-          <div class="flex items-center justify-between gap-4">
-            <h3 class="font-display text-2xl font-bold text-white">3. Mon objectif</h3>
-            <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs uppercase tracking-[0.22em] text-mist">Footwear First</span>
-          </div>
-          <p class="mt-6 text-sm leading-7 text-slate-300">
-            Rejoindre la cellule test Domyos pour garantir la validation de nos chaussures&nbsp;: capitaliser sur les méthodes existantes en Sportswear, et construire la méthodologie de test sur le nouveau périmètre Walking, du marcheur du quotidien aux professionnels en station debout prolongée.
+        <article class="reveal border-l-4 border-deca bg-cloud p-7">
+          <p class="font-cond text-xs font-bold uppercase tracking-widest text-black/50">Footwear First</p>
+          <h3 class="mt-2 text-xl font-bold">Mon objectif</h3>
+          <p class="mt-3 text-sm leading-7 text-black/70">
+            Rejoindre la cellule test Domyos pour garantir la validation de nos chaussures&nbsp;: capitaliser sur les méthodes existantes en Sportswear, et construire la méthodologie de test sur le périmètre Walking.
           </p>
         </article>
       </div>
     </section>
 
-    <!-- SECTION 2&nbsp;: APPORT -->
-    <section id="apport" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-      <div class="reveal mb-10 max-w-3xl">
-        <p class="text-sm font-medium uppercase tracking-[0.28em] text-alpine">Compétences & Apprentissage</p>
-        <h2 class="mt-4 font-display text-3xl font-bold text-white sm:text-4xl">Ce que j'apporte sur les 4 axes du poste.</h2>
-        <p class="mt-5 text-lg leading-8 text-slate-300">
-          Le métier change d'objet, mais la logique reste la même&nbsp;: définir ce qu'on veut prouver, tester avec méthode, analyser les résultats et porter une conclusion claire.
-        </p>
-      </div>
-
-      <div class="grid gap-6 sm:grid-cols-2">
-        <article class="reveal rounded-[2rem] border border-white/10 bg-white/5 p-8">
-          <p class="text-xs uppercase tracking-[0.28em] text-emerald-300">1. Stratégie, Méthodologie & Partenariats</p>
-          <h3 class="mt-4 text-xl font-semibold text-white">Construire des protocoles qui prouvent</h3>
-          <p class="mt-4 text-sm leading-7 text-slate-300">
-            Je rédige et je fais évoluer des plans de test qui vérifient la conformité d'un produit à ses spécifications. Transposer cette démarche aux Avantages Produits d'une chaussure, c'est définir des critères mesurables et relier l'usage ressenti aux choix techniques.
+    <!-- APPORT -->
+    <section id="apport" class="bg-cloud">
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+        <div class="reveal max-w-3xl">
+          <p class="font-cond text-sm font-bold uppercase tracking-widest text-deca">Mon apport</p>
+          <h2 class="h-sport mt-2 text-4xl sm:text-5xl">Les 4 axes du poste</h2>
+          <p class="mt-5 text-lg leading-8 text-black/70">
+            Le métier change d'objet, mais la logique reste la même&nbsp;: définir ce qu'on veut prouver, tester avec méthode, analyser les résultats et porter une conclusion claire.
           </p>
-        </article>
-
-        <article class="reveal rounded-[2rem] border border-white/10 bg-white/5 p-8">
-          <p class="text-xs uppercase tracking-[0.28em] text-emerald-300">2. Opérationnel</p>
-          <h3 class="mt-4 text-xl font-semibold text-white">Piloter une campagne de bout en bout</h3>
-          <p class="mt-4 text-sm leading-7 text-slate-300">
-            Je pilote des campagnes de validation finale, de la préparation à la diffusion des résultats, avec des rapports d'exécution générés automatiquement. Je veux maintenant apprendre les tests de fitting, les tests fonction terrain et les tests longue durée.
-          </p>
-        </article>
-
-        <article class="reveal rounded-[2rem] border border-white/10 bg-white/5 p-8">
-          <p class="text-xs uppercase tracking-[0.28em] text-emerald-300">3. Animation fonctionnelle</p>
-          <h3 class="mt-4 text-xl font-semibold text-white">Rendre les autres autonomes</h3>
-          <p class="mt-4 text-sm leading-7 text-slate-300">
-            J'ai mis à disposition de nos fournisseurs et clients internes des applications de test pour qu'ils puissent tester en autonomie, puis j'évalue leurs retours. C'est la même logique que former les assistants chef de produit et déléguer une partie des tests aux homologues en Chine, au Vietnam et en Inde, avec qui mon très bon niveau d'anglais me permettra de collaborer facilement.
-          </p>
-        </article>
-
-        <article class="reveal rounded-[2rem] border border-white/10 bg-white/5 p-8">
-          <p class="text-xs uppercase tracking-[0.28em] text-emerald-300">4. Force de proposition</p>
-          <h3 class="mt-4 text-xl font-semibold text-white">Porter les conclusions</h3>
-          <p class="mt-4 text-sm leading-7 text-slate-300">
-            Je partage régulièrement les KPIs qualité, les retours d'expérience et les bonnes pratiques à notre unit, notamment via la Newsletter QA Connected Products. Présenter des résultats et défendre une position argumentée fait partie de mon quotidien.
-          </p>
-        </article>
-      </div>
-
-      <div class="mt-6 grid gap-6 lg:grid-cols-2">
-        <article class="reveal rounded-[2rem] border border-alpine/30 bg-gradient-to-br from-alpine/15 to-teal-900/20 p-8 shadow-panel">
-          <p class="text-xs uppercase tracking-[0.28em] text-emerald-200">Le vrai plus&nbsp;: Data, IA & automatisation</p>
-          <h3 class="mt-4 text-2xl font-semibold text-white">Faire passer un cap à la cellule</h3>
-          <p class="mt-4 leading-8 text-slate-100/90">
-            J'utilise l'IA au quotidien et je crée des <strong>applications sur mesure</strong> pour mon métier actuel. J'ai aussi développé des outils pour fluidifier les tâches de QA&nbsp;: <strong>génération automatique de plans de test</strong>, <strong>rapports d'exécution automatisés</strong>, scripts d'envoi des mails de diffusion. Je suis prêt à pousser l'automatisation par l'IA pour faciliter le métier d'IET, du questionnaire à l'analyse statistique des réponses.
-          </p>
-        </article>
-
-        <article class="reveal rounded-[2rem] border border-white/10 bg-white/5 p-8">
-          <p class="text-xs uppercase tracking-[0.28em] text-emerald-300">Ce que je viens apprendre</p>
-          <h3 class="mt-4 text-2xl font-semibold text-white">L'ingénierie de la chaussure et le test humain</h3>
-          <p class="mt-4 leading-8 text-slate-300">
-            Je ne maîtrise pas encore les protocoles de fitting, la mesure du ressenti utilisateur ni les spécificités techniques de la chaussure. C'est précisément ce que j'ai hâte d'apprendre aux côtés des 10 ingénieurs essai terrain de la cellule Domyos.
-          </p>
-        </article>
-      </div>
-
-      <!-- PÉRIMÈTRE ACTUEL -->
-      <div class="reveal mt-20">
-        <p class="mb-10 text-center text-sm font-medium uppercase tracking-[0.22em] text-emerald-300">Mon périmètre actuel · QA Connected Products</p>
-
-        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
-            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300">Relation fournisseurs</p>
-            <h4 class="mt-2 text-lg font-bold text-white">Applications de test</h4>
-            <p class="mt-2 text-xs leading-relaxed text-slate-300">Mise à disposition d'applications dédiées aux fournisseurs et aux clients internes pour leur donner plus d'autonomie dans leurs tests et réduire les boucles de développement.</p>
-          </div>
-
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
-            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300">Produits sportifs</p>
-            <h4 class="mt-2 text-lg font-bold text-white">Fitness, vélo & montres</h4>
-            <p class="mt-2 text-xs leading-relaxed text-slate-300">Un large panel de produits à évaluer, du vélo au fitness&nbsp;: vélos électriques, tapis de course, rameurs, elliptiques, vélos d'intérieur, montres connectées, et bientôt home trainers, GPS et radars.</p>
-          </div>
-
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
-            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300">Validation</p>
-            <h4 class="mt-2 text-lg font-bold text-white">Campagnes de test</h4>
-            <p class="mt-2 text-xs leading-relaxed text-slate-300">Validation finale avant déploiement&nbsp;: contrôle de la conformité du logiciel aux spécifications définies en amont et garantie d'une expérience utilisateur fluide.</p>
-          </div>
-
-          <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
-            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-300">Culture qualité</p>
-            <h4 class="mt-2 text-lg font-bold text-white">Newsletter & animation</h4>
-            <p class="mt-2 text-xs leading-relaxed text-slate-300">Partage régulier des bonnes pratiques avec les équipes de notre écosystème, et diffusion des KPIs et des retours d'expérience qualité à notre unit via des newsletters.</p>
-          </div>
         </div>
-      </div>
-    </section>
 
-    <!-- SECTION 3&nbsp;: PREMIÈRES PISTES -->
-    <section id="pistes" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-      <div class="reveal mb-10 max-w-3xl">
-        <p class="text-sm font-medium uppercase tracking-[0.28em] text-alpine">Force de proposition</p>
-        <h2 class="mt-4 font-display text-3xl font-bold text-white sm:text-4xl">Mes premières pistes pour le périmètre Walking.</h2>
-        <p class="mt-5 text-lg leading-8 text-slate-300">
-          Des idées de départ, vues de l'extérieur, que j'ai envie de confronter à l'expérience de l'équipe.
-        </p>
-      </div>
+        <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="reveal border-t-4 border-deca bg-white p-6">
+            <p class="h-sport text-5xl text-deca">01</p>
+            <p class="mt-3 font-cond text-xs font-bold uppercase tracking-widest text-black/50">Stratégie, méthodologie & partenariats</p>
+            <h3 class="mt-1 text-lg font-bold">Construire des protocoles qui prouvent</h3>
+            <p class="mt-2 text-sm leading-6 text-black/70">Je rédige et je fais évoluer des plans de test qui vérifient la conformité d'un produit à ses spécifications. Transposé aux Avantages Produits d'une chaussure, c'est définir des critères mesurables et relier l'usage ressenti aux choix techniques.</p>
+          </article>
+          <article class="reveal border-t-4 border-deca bg-white p-6">
+            <p class="h-sport text-5xl text-deca">02</p>
+            <p class="mt-3 font-cond text-xs font-bold uppercase tracking-widest text-black/50">Opérationnel</p>
+            <h3 class="mt-1 text-lg font-bold">Piloter une campagne de bout en bout</h3>
+            <p class="mt-2 text-sm leading-6 text-black/70">Je pilote des campagnes de validation finale, de la préparation à la diffusion des résultats, avec des rapports d'exécution générés automatiquement. Je veux maintenant apprendre les tests de fitting, fonction terrain et longue durée.</p>
+          </article>
+          <article class="reveal border-t-4 border-deca bg-white p-6">
+            <p class="h-sport text-5xl text-deca">03</p>
+            <p class="mt-3 font-cond text-xs font-bold uppercase tracking-widest text-black/50">Animation fonctionnelle</p>
+            <h3 class="mt-1 text-lg font-bold">Rendre les autres autonomes</h3>
+            <p class="mt-2 text-sm leading-6 text-black/70">J'ai mis à disposition de nos fournisseurs en Chine et clients internes des applications de test pour qu'ils testent en autonomie, puis j'évalue leurs retours.</p>
+          </article>
+          <article class="reveal border-t-4 border-deca bg-white p-6">
+            <p class="h-sport text-5xl text-deca">04</p>
+            <p class="mt-3 font-cond text-xs font-bold uppercase tracking-widest text-black/50">Force de proposition</p>
+            <h3 class="mt-1 text-lg font-bold">Porter les conclusions</h3>
+            <p class="mt-2 text-sm leading-6 text-black/70">Je partage régulièrement les KPIs qualité, les retours d'expérience et les bonnes pratiques à notre unit, notamment via la Newsletter QA Connected Products.</p>
+          </article>
+        </div>
 
-      <div class="grid gap-6 sm:grid-cols-2">
-        <article class="reveal rounded-[2rem] border border-white/10 bg-white/5 p-8">
-          <p class="font-display text-4xl font-bold text-alpine/80">01</p>
-          <h3 class="mt-4 text-xl font-semibold text-white">Un panel qui couvre toutes les cibles</h3>
-          <p class="mt-4 text-sm leading-7 text-slate-300">
-            Marcheurs du quotidien, marcheurs loisir, et professionnels en station debout prolongée. Pour ces derniers, nos propres coéquipiers en magasin et en entrepôt sont un réseau de testeurs accessible et représentatif, à compléter par des partenariats avec d'autres métiers debout.
-          </p>
-        </article>
+        <div class="mt-5 grid gap-5 lg:grid-cols-[1.4fr_1fr]">
+          <article class="reveal rounded-2xl bg-decaDark p-8 text-white sm:p-10">
+            <p class="inline-block bg-white px-2 py-0.5 font-cond text-xs font-bold uppercase tracking-wider text-decaDark">Le vrai plus</p>
+            <h3 class="h-sport mt-4 text-4xl">Data, IA & automatisation</h3>
+            <p class="mt-4 leading-7 text-white/85">
+              J'utilise l'IA au quotidien et je crée des <strong>applications sur mesure</strong> pour mon métier actuel. J'ai aussi développé des outils pour fluidifier les tâches de QA&nbsp;: <strong>génération automatique de plans de test</strong>, <strong>rapports d'exécution automatisés</strong>, scripts d'envoi des mails de diffusion. Je suis prêt à pousser l'automatisation par l'IA pour faciliter le métier d'IET, du questionnaire à l'analyse statistique des réponses.
+            </p>
+          </article>
+          <article class="reveal rounded-2xl border-2 border-deca bg-white p-8 sm:p-10">
+            <p class="font-cond text-xs font-bold uppercase tracking-widest text-deca">Ce que je viens apprendre</p>
+            <h3 class="mt-3 text-2xl font-bold">L'ingénierie de la chaussure et le test humain</h3>
+            <p class="mt-4 leading-7 text-black/70">
+              Je ne maîtrise pas encore les protocoles de fitting, la mesure du ressenti utilisateur ni les spécificités techniques de la chaussure. C'est précisément ce que j'ai hâte d'apprendre&nbsp;!
+            </p>
+          </article>
+        </div>
 
-        <article class="reveal rounded-[2rem] border border-white/10 bg-white/5 p-8">
-          <p class="font-display text-4xl font-bold text-alpine/80">02</p>
-          <h3 class="mt-4 text-xl font-semibold text-white">Une chaîne de données automatisée</h3>
-          <p class="mt-4 text-sm leading-7 text-slate-300">
-            Du questionnaire testeur au rapport final&nbsp;: collecte structurée, consolidation automatique, analyses statistiques prêtes à l'emploi. Moins de temps passé à compiler, plus de temps sur le terrain et sur l'interprétation.
-          </p>
-        </article>
-
-        <article class="reveal rounded-[2rem] border border-white/10 bg-white/5 p-8">
-          <p class="font-display text-4xl font-bold text-alpine/80">03</p>
-          <h3 class="mt-4 text-xl font-semibold text-white">Un kit de délégation</h3>
-          <p class="mt-4 text-sm leading-7 text-slate-300">
-            Des protocoles standardisés et une grille d'évaluation des rendus, pour faire monter en autonomie les assistants chef de produit et fiabiliser les tests délégués aux homologues à l'international.
-          </p>
-        </article>
-
-        <article class="reveal rounded-[2rem] border border-white/10 bg-white/5 p-8">
-          <p class="font-display text-4xl font-bold text-alpine/80">04</p>
-          <h3 class="mt-4 text-xl font-semibold text-white">Des outils IA sur mesure pour l'IET</h3>
-          <p class="mt-4 text-sm leading-7 text-slate-300">
-            Regrouper et synthétiser les commentaires libres des testeurs pour faire ressortir plus vite les signaux faibles, préparer les protocoles et les supports de restitution. Le tout avec des outils construits pour les besoins de la cellule, et toujours sous le contrôle de l'ingénieur qui porte la conclusion.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <!-- SECTION 4&nbsp;: PARCOURS -->
-    <section id="parcours" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-      <div class="reveal mb-12 max-w-3xl">
-        <p class="text-sm font-medium uppercase tracking-[0.28em] text-alpine">Expériences & Évolution</p>
-        <h2 class="mt-4 font-display text-3xl font-bold text-white sm:text-4xl">Mon parcours professionnel.</h2>
-        <p class="mt-4 text-base text-slate-300">
-          Du développement logiciel embarqué en start-up à la qualité produit chez Decathlon, vers l'ingénierie d'essai terrain.
-        </p>
-      </div>
-
-      <div class="relative ml-2 space-y-12 border-l border-white/15 pl-6 sm:ml-4 sm:pl-10">
-        <div class="reveal relative">
-          <div class="absolute -left-[31px] top-1.5 h-4 w-4 rounded-full border-2 border-alpine bg-night sm:-left-[47px]"></div>
-
-          <div class="rounded-[2rem] border border-white/10 bg-white/5 p-6 backdrop-blur-sm sm:p-8">
-            <div class="flex flex-wrap items-center justify-between gap-2">
-              <span class="rounded-full border border-alpine/30 bg-alpine/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-emerald-300">Poste actuel</span>
-              <span class="text-xs font-medium text-mist">Depuis début 2025</span>
+        <div class="reveal mt-16">
+          <p class="font-cond text-sm font-bold uppercase tracking-widest text-black/50">Mon périmètre actuel · QA Connected Products</p>
+          <div class="mt-5 grid gap-px overflow-hidden rounded-2xl border border-black/10 bg-black/10 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="bg-white p-6">
+              <p class="font-cond text-xs font-bold uppercase tracking-widest text-deca">Relation fournisseurs</p>
+              <h4 class="mt-2 font-bold">Applications de test</h4>
+              <p class="mt-2 text-sm leading-6 text-black/70">Des applications dédiées aux fournisseurs et clients internes pour leur donner plus d'autonomie dans leurs tests et réduire les boucles de développement.</p>
             </div>
-            <h3 class="mt-4 text-xl font-bold text-white sm:text-2xl">Ingénieur QA Connected Products</h3>
-            <p class="text-sm font-medium text-alpine">Decathlon</p>
-            <ul class="mt-4 list-inside list-disc space-y-2 text-sm leading-relaxed text-slate-300">
-              <li>Conception et exécution des stratégies de test pour les produits connectés (montres, vélos électriques, tapis de course, etc.).</li>
-              <li>Développement de scripts d'automatisation&nbsp;: plans de test, rapports d'exécution et diffusion.</li>
-              <li>Animation et organisation d'équipe, newsletter qualité.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="reveal relative">
-          <div class="absolute -left-[31px] top-1.5 h-4 w-4 rounded-full border-2 border-white/30 bg-night sm:-left-[47px]"></div>
-
-          <div class="rounded-[2rem] border border-white/10 bg-white/5 p-6 backdrop-blur-sm sm:p-8">
-            <div class="flex flex-wrap items-center justify-between gap-2">
-              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-mist">Expérience précédente</span>
-              <span class="text-xs font-medium text-mist">2022 - 2025</span>
+            <div class="bg-white p-6">
+              <p class="font-cond text-xs font-bold uppercase tracking-widest text-deca">Produits sportifs</p>
+              <h4 class="mt-2 font-bold">Fitness, vélo & montres</h4>
+              <p class="mt-2 text-sm leading-6 text-black/70">Vélos électriques, tapis de course, rameurs, elliptiques, vélos d'intérieur, montres connectées, et bientôt home trainers, GPS et radars.</p>
             </div>
-            <h3 class="mt-4 text-xl font-bold text-white sm:text-2xl">Développeur Logiciel Embarqué</h3>
-            <p class="text-sm font-medium text-mist">BeFC (start-up), des piles en papier</p>
-            <ul class="mt-4 list-inside list-disc space-y-2 text-sm leading-relaxed text-slate-300">
-              <li>Développement de prototypes et de logiciels embarqués.</li>
-              <li>Relation directe avec les clients et cadrage des besoins techniques.</li>
-              <li>Industrialisation de la production électronique et logicielle.</li>
-            </ul>
+            <div class="bg-white p-6">
+              <p class="font-cond text-xs font-bold uppercase tracking-widest text-deca">Validation</p>
+              <h4 class="mt-2 font-bold">Campagnes de test</h4>
+              <p class="mt-2 text-sm leading-6 text-black/70">Validation finale avant déploiement&nbsp;: conformité du logiciel aux spécifications et garantie d'une expérience utilisateur fluide.</p>
+            </div>
+            <div class="bg-white p-6">
+              <p class="font-cond text-xs font-bold uppercase tracking-widest text-deca">Culture qualité</p>
+              <h4 class="mt-2 font-bold">Newsletter & animation</h4>
+              <p class="mt-2 text-sm leading-6 text-black/70">Partage des bonnes pratiques avec notre écosystème, et diffusion des KPIs et retours d'expérience qualité à notre unit.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 5&nbsp;: TERRAIN & VEILLE -->
+
+    <!-- PARCOURS -->
+    <section id="parcours" class="bg-cloud">
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+        <div class="reveal max-w-3xl">
+          <p class="font-cond text-sm font-bold uppercase tracking-widest text-deca">Expériences</p>
+          <h2 class="h-sport mt-2 text-4xl sm:text-5xl">Mon parcours</h2>
+          <p class="mt-5 text-lg leading-8 text-black/70">Du développement logiciel embarqué en start-up à la qualité produit chez Decathlon, vers l'ingénierie d'essai terrain.</p>
+        </div>
+
+        <div class="mt-10 grid gap-5 lg:grid-cols-2">
+          <article class="reveal rounded-2xl bg-white p-7 sm:p-8">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <span class="bg-deca px-2.5 py-1 font-cond text-xs font-bold uppercase tracking-wider text-white">Poste actuel</span>
+              <span class="text-sm text-black/60">Depuis début 2025</span>
+            </div>
+            <h3 class="mt-4 text-2xl font-bold">Ingénieur QA Connected Products</h3>
+            <p class="text-sm font-medium text-deca">Decathlon</p>
+            <ul class="mt-4 space-y-2 text-sm leading-6 text-black/70">
+              <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 shrink-0 bg-deca"></span>Conception et exécution des stratégies de test pour les produits connectés (montres, vélos électriques, tapis de course, etc.).</li>
+              <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 shrink-0 bg-deca"></span>Développement de scripts d'automatisation et d'applications sur mesure&nbsp;: plans de test, rapports d'exécution et diffusion.</li>
+              <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 shrink-0 bg-deca"></span>Animation et organisation d'équipe.</li>
+            </ul>
+          </article>
+
+          <article class="reveal rounded-2xl bg-white p-7 sm:p-8">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <span class="bg-black/10 px-2.5 py-1 font-cond text-xs font-bold uppercase tracking-wider">Expérience précédente</span>
+              <span class="text-sm text-black/60">2022 - 2025</span>
+            </div>
+            <h3 class="mt-4 text-2xl font-bold">Développeur Logiciel Embarqué</h3>
+            <p class="text-sm font-medium text-black/60">BeFC (start-up), des piles en papier</p>
+            <ul class="mt-4 space-y-2 text-sm leading-6 text-black/70">
+              <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 shrink-0 bg-black/40"></span>Développement de prototypes et de logiciels embarqués.</li>
+              <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 shrink-0 bg-black/40"></span>Relation directe avec les clients et cadrage des besoins techniques.</li>
+              <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 shrink-0 bg-black/40"></span>Industrialisation de la production électronique et logicielle.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TERRAIN -->
     <section id="terrain" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
-      <div class="reveal mb-10 max-w-3xl">
-        <p class="text-sm font-medium uppercase tracking-[0.28em] text-alpine">Mes pratiques & ma veille</p>
-        <h2 class="mt-4 font-display text-3xl font-bold text-white sm:text-4xl">Des kilomètres dans les pieds.</h2>
+      <div class="reveal max-w-3xl">
+        <p class="font-cond text-sm font-bold uppercase tracking-widest text-deca">Mes pratiques & ma veille</p>
+        <h2 class="h-sport mt-2 text-4xl sm:text-5xl">Des kilomètres dans les pieds</h2>
       </div>
 
-      <div class="grid gap-6 sm:grid-cols-2">
-        <article class="reveal rounded-[2rem] border border-white/10 bg-white/5 p-8">
-          <p class="text-xs uppercase tracking-[0.24em] text-emerald-300">Mes activités</p>
-          <h3 class="mt-2 text-2xl font-semibold text-white">Marche, randonnée en autonomie & trail</h3>
-          <p class="mt-4 text-sm leading-7 text-slate-300">
+      <div class="mt-10 grid gap-5 lg:grid-cols-2">
+        <article class="reveal rounded-2xl border border-black/10 p-7 sm:p-8">
+          <p class="font-cond text-xs font-bold uppercase tracking-widest text-deca">Mes activités</p>
+          <h3 class="mt-2 text-2xl font-bold">Marche, randonnée en autonomie & trail</h3>
+          <p class="mt-3 text-sm leading-7 text-black/70">
             Passionné de marche et de randonnée, j'aime partir plusieurs jours en autonomie&nbsp;: GR20, traversées du Vercors et de la Chartreuse, boucle dans les Pyrénées avec le Vignemale. Je pratique aussi le bikepacking et le gravel (un tour de France de 5 mois), le trail (Maxi-Race en relais entre collègues), le ski alpin et de randonnée, ainsi que le VTT.
           </p>
         </article>
-
-        <article class="reveal rounded-[2rem] border border-white/10 bg-white/5 p-8">
-          <p class="text-xs uppercase tracking-[0.24em] text-emerald-300">Ma passion pour le matériel</p>
-          <h3 class="mt-2 text-2xl font-semibold text-white">Benchmark & veille spontanée</h3>
-          <p class="mt-4 text-sm leading-7 text-slate-300">
+        <article class="reveal rounded-2xl border border-black/10 p-7 sm:p-8">
+          <p class="font-cond text-xs font-bold uppercase tracking-widest text-deca">Ma passion pour le matériel</p>
+          <h3 class="mt-2 text-2xl font-bold">Benchmark & veille spontanée</h3>
+          <p class="mt-3 text-sm leading-7 text-black/70">
             J'aime analyser et comparer mon équipement personnel. Je passe beaucoup de temps à éplucher articles, tests et vidéos sur les chaussures de marche, de randonnée et de trail, ainsi que sur le matériel de bivouac et de vélo.
           </p>
         </article>
       </div>
+
+      <div class="reveal mt-5 grid grid-cols-2 gap-3 lg:grid-cols-4">
+        <figure class="relative overflow-hidden rounded-xl"><img class="aspect-[4/5] w-full object-cover" src="images/vignemale.jpg" alt="Sommet du Vignemale, 3298 m" loading="lazy"><figcaption class="absolute bottom-2 left-2 bg-white px-2 py-0.5 font-cond text-xs font-bold uppercase">Vignemale</figcaption></figure>
+        <figure class="relative overflow-hidden rounded-xl"><img class="aspect-[4/5] w-full object-cover" src="images/tdf.jpg" alt="Tour de France à vélo en bikepacking" loading="lazy"><figcaption class="absolute bottom-2 left-2 bg-white px-2 py-0.5 font-cond text-xs font-bold uppercase">Tour de France vélo</figcaption></figure>
+        <figure class="relative overflow-hidden rounded-xl"><img class="aspect-[4/5] w-full object-cover" src="images/gr20.jpg" alt="Gaétan Jung en randonnée en autonomie sur le GR20" loading="lazy"><figcaption class="absolute bottom-2 left-2 bg-white px-2 py-0.5 font-cond text-xs font-bold uppercase">GR20</figcaption></figure>
+        <figure class="relative overflow-hidden rounded-xl"><img class="aspect-[4/5] w-full object-cover" src="images/benchmark.jpg" alt="Bivouac au bord d'un lac de montagne" loading="lazy"><figcaption class="absolute bottom-2 left-2 bg-white px-2 py-0.5 font-cond text-xs font-bold uppercase">Bivouac</figcaption></figure>
+      </div>
     </section>
 
     <!-- ÉCHANGE -->
-    <section class="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
-      <div class="reveal overflow-hidden rounded-[2rem] border border-alpine/20 bg-gradient-to-r from-alpine/15 via-teal-900/20 to-transparent p-8 sm:p-10">
-        <div class="grid gap-8 lg:grid-cols-[1fr_300px] lg:items-center">
-          <div>
-            <p class="text-sm font-medium uppercase tracking-[0.28em] text-emerald-200">Decathlon Fitness Lab · Marcq-en-Barœul</p>
-            <h2 class="mt-3 font-display text-3xl font-bold text-white">Prêt pour une prise de poste début 2027.</h2>
-            <p class="mt-4 text-base leading-8 text-slate-100/90">
-              Je serais ravi d'échanger avec toi sur le poste et sur la cellule test Domyos, en visio ou directement au Fitness Lab.
-            </p>
-            <div class="mt-6">
-              <a href="mailto:gaetan.jung@decathlon.com?subject=Candidature%20IET%20Footwear%20Sportswear%20%2F%20Walking" class="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-slate-100">Proposer un échange</a>
-            </div>
-          </div>
-          <div class="overflow-hidden rounded-2xl border border-white/10">
-            <img class="h-64 w-full object-cover" src="images/gr20.jpg" alt="Gaétan Jung en randonnée en autonomie sur le GR20">
-          </div>
+    <section class="bg-cloud">
+      <div class="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-14 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+        <div class="reveal">
+          <p class="font-cond text-sm font-bold uppercase tracking-widest text-deca">Decathlon Fitness Lab · Marcq-en-Barœul</p>
+          <h2 class="h-sport mt-2 text-4xl sm:text-5xl">Prêt pour début 2027</h2>
+          <p class="mt-4 max-w-xl leading-7 text-black/70">Je serais ravi d'échanger avec toi sur le poste et sur la cellule test Domyos, en visio ou directement au Fitness Lab. Écris-moi sur Google Chat&nbsp;: <strong class="text-ink">gaetan.jung@decathlon.com</strong></p>
         </div>
+        <a class="reveal shrink-0 self-start rounded-full bg-deca px-7 py-3.5 text-sm font-bold text-white transition hover:bg-decaDark lg:self-center" href="https://chat.google.com/" target="_blank" rel="noreferrer">Me chatter sur Google Chat</a>
       </div>
     </section>
   </main>
 
-  <footer id="contact" class="border-t border-white/10 bg-slate-950/80">
-    <div class="mx-auto flex max-w-7xl flex-col gap-8 px-4 py-10 sm:px-6 lg:flex-row lg:items-end lg:justify-between lg:px-8">
+  <footer id="contact" class="bg-deca text-white">
+    <div class="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-10 sm:px-6 lg:flex-row lg:items-end lg:justify-between lg:px-8">
       <div>
-        <p class="text-sm font-medium uppercase tracking-[0.28em] text-alpine">Contact</p>
-        <h2 class="mt-3 font-display text-2xl font-bold text-white">Gaétan Jung</h2>
-        <p class="mt-4 max-w-2xl text-sm leading-7 text-slate-400">
-          Disponible par e-mail, en visio ou sur place à Marcq-en-Barœul.
-        </p>
+        <p class="h-sport text-3xl">Gaétan Jung</p>
+        <p class="mt-2 text-sm text-white/80">Disponible par chat, e-mail, en visio ou sur place à Marcq-en-Barœul.</p>
       </div>
-
-      <div class="grid gap-3 text-sm text-slate-300">
-        <a class="transition hover:text-white" href="mailto:gaetan.jung@decathlon.com">Email interne — gaetan.jung@decathlon.com</a>
-        <a class="transition hover:text-white" href="https://github.com/GaetanJung0" target="_blank" rel="noreferrer">GitHub — github.com/GaetanJung0</a>
+      <div class="grid gap-2 text-sm">
+        <a class="hover:underline" href="https://chat.google.com/" target="_blank" rel="noreferrer">Google Chat — gaetan.jung@decathlon.com</a>
+        <a class="hover:underline" href="https://github.com/GaetanJung0" target="_blank" rel="noreferrer">github.com/GaetanJung0</a>
       </div>
     </div>
   </footer>
